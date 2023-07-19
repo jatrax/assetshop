@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainpageController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="250.0" layoutY="179.0" prefHeight="557.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ListView fx:id="listbx" prefHeight="491.0" prefWidth="645.0" />
+            <Label text="İSME GÖRE ARA">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="search" onKeyTyped="#search_changed" />
+            <Label text="ÜRÜN ADI">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="urun_ad" />
+            <Label text="ÜRÜN FİYATI">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="urun_fiyat" />
+            <Label text="ÜRÜN URL (FOTO)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="urun_url" />
+            <Label text="TÜR">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="urun_tur" prefWidth="150.0" />
+            <Label text="OYUN MOTORU">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="urun_motor" prefWidth="150.0" />
+            <HBox prefHeight="142.0" prefWidth="645.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#ekle" prefHeight="157.0" prefWidth="323.0" text="EKLE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#güncelle" prefHeight="157.0" prefWidth="323.0" text="GÜNCELLE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#sil" prefHeight="157.0" prefWidth="323.0" text="SİL">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
